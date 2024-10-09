@@ -1,183 +1,70 @@
-## Directory 구조
+# Getting Started with Create React App
 
-```
-Frontend
-|_deployment
-|_public
-|_src
-    |_assets
-    |_common
-    |_utils
-        |_apiInstance.js
-    |_pages
-        |_main.jsx
-    |_components
-        |_main.jsx
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-```
+## Available Scripts
 
-## FRONT CODE CONVENTION
+In the project directory, you can run:
 
-🎨
-:art:
-코드의 구조/형태 개선
-Improve structure / format of the code.
+### `npm start`
 
-⚡️
-:zap:
-성능 개선
-Improve performance.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-🔥
-:fire:
-코드/파일 삭제
-Remove code or files.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-🐛
-:bug:
-버그 수정
-Fix a bug.
+### `npm test`
 
-✨
-:sparkles:
-새 기능/컴포넌트 생성
-Introduce new features.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-📝
-:memo:
-문서 추가/수정
-Add or update documentation.
+### `npm run build`
 
-💄
-:lipstick:
-UI/스타일 파일 추가/수정
-Add or update the UI and style files.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-✅
-:white_check_mark:
-테스트 추가/수정
-Add or update tests.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-🔖
-:bookmark:
-릴리즈/버전 태그
-Release / Version tags.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-💚
-:green_heart:
-CI 빌드 수정/배포 파일 수정
-Fix CI Build.
+### `npm run eject`
 
-♻️
-:recycle:
-코드 리팩토링
-Refactor code.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-➕
-:heavy_plus_sign:
-의존성 추가/
-Add a dependency.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-➖
-:heavy_minus_sign:
-의존성 제거
-Remove a dependency.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-🔧
-:wrench:
-구성 파일 추가/ 디렉토리 추가
-Add or update configuration files.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-🔨
-:hammer:
-개발 스크립트 추가/수정
-Add or update development scripts.
+## Learn More
 
-🌐
-:globe_with_meridians:
-국제화/현지화
-Internationalization and localization.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-💩
-:poop:
-똥싼 코드
-Write bad code that needs to be improved.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-⏪
-:rewind:
-변경 내용 되돌리기
-Revert changes.
+### Code Splitting
 
-🔀
-:twisted_rightwards_arrows:
-브랜치 합병
-Merge branches.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-📦
-:package:
-컴파일된 파일 추가/수정
-Add or update compiled files or packages.
+### Analyzing the Bundle Size
 
-🚚
-:truck:
-리소스 이동, 이름 변경
-Move or rename resources (e.g.: files paths routes).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-💡
-:bulb:
-주석 추가/수정
-Add or update comments in source code.
+### Making a Progressive Web App
 
-🙈
-:see_no_evil:
-.gitignore 추가/수정
-Add or update a .gitignore file.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-출처: https://inpa.tistory.com/entry/GIT-⚡️-Gitmoji-사용법-Gitmoji-cli# [Inpa Dev 👨‍💻:티스토리]
+### Advanced Configuration
 
-## API 규정
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Base URL
+### Deployment
 
-```javascript
-import axios from "axios";
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-export const API_BASE_URL = "http://gudokjoa5.165.192.105.60.nip.io";
+### `npm run build` fails to minify
 
-const apiInstance = axios.create({
-  baseURL: `${API_BASE_URL}`,
-  headers: {
-    "Content-type": "application/json",
-  },
-});
-
-export default apiInstance;
-```
-
-### 활용 예시
-
-```javascript
-import api from "../utils/apiInstance";
-
-const getUser = async (userId) => {
-  try {
-    const { data } = await api.get("/users", { params: { id: userId } });
-    console.log(data);
-    return data;
-  } catch (err) {
-    return err;
-  }
-};
-
-const addBook = async (bookId, userId) => {
-  try {
-    const { data } = await api.post("kkubooks/bookshelf/", {
-      book: bookId,
-      user: userId,
-    });
-    return data;
-  } catch (err) {
-    return err;
-  }
-};
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
