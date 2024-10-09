@@ -1,4 +1,0 @@
-rootProject.name = 'subrecommend'
-include 'subrecommend-biz'
-include 'subrecommend-infra'
-

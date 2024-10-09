@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subrecommend.iml" filepath="$PROJECT_DIR$/.idea/modules/subrecommend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subrecommend.main.iml" filepath="$PROJECT_DIR$/.idea/modules/subrecommend.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subrecommend-biz/subrecommend.subrecommend-biz.iml" filepath="$PROJECT_DIR$/.idea/modules/subrecommend-biz/subrecommend.subrecommend-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subrecommend-biz/subrecommend.subrecommend-biz.main.iml" filepath="$PROJECT_DIR$/.idea/modules/subrecommend-biz/subrecommend.subrecommend-biz.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subrecommend-biz/subrecommend.subrecommend-biz.test.iml" filepath="$PROJECT_DIR$/.idea/modules/subrecommend-biz/subrecommend.subrecommend-biz.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subrecommend-infra/subrecommend.subrecommend-infra.iml" filepath="$PROJECT_DIR$/.idea/modules/subrecommend-infra/subrecommend.subrecommend-infra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subrecommend-infra/subrecommend.subrecommend-infra.main.iml" filepath="$PROJECT_DIR$/.idea/modules/subrecommend-infra/subrecommend.subrecommend-infra.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subrecommend-infra/subrecommend.subrecommend-infra.test.iml" filepath="$PROJECT_DIR$/.idea/modules/subrecommend-infra/subrecommend.subrecommend-infra.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/subrecommend.test.iml" filepath="$PROJECT_DIR$/.idea/modules/subrecommend.test.iml" />
+    </modules>
+  </component>
+</project>
